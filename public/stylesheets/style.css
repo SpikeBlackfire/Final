@@ -1,0 +1,167 @@
+ @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+ html {
+   scroll-behavior: smooth;
+ }
+
+ #grad1 {
+  /*height: 900px;*/
+  background-color: pink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(246, 188, 229), white);
+}
+
+ h1{
+font-family: Architects Daughter;
+ }
+
+ h2{
+  font-family: Roboto Condensed ;
+ }
+
+ .fixed-top {
+   position: fixed
+ }
+
+ .carousel-inner>.item>img {
+   width: 640px;
+   height: 360px;
+ }
+
+
+ .card-text {
+   font-family: 'Exo 2', sans-serif;
+ }
+
+ .card-title {
+   font-family: 'Oooh Baby', cursive;
+   font-size: 32px;
+ }
+
+ /*   VIDEO VIEJO CSS  
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* padding-top: 56.25%; 
+  }
+  .responsive-iframe {
+    position: fixed /*absolute? ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% /*70%? ;
+    height: 75% /*70% ? ;
+      }  
+      
+      FIN VIDEO VIEJO CSS*/
+
+
+ /* NUEVO RESPONSIVE VIDEO */
+ .responsive-video {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 60px;
+   overflow: hidden;
+ }
+
+ .responsive-video iframe,
+ .responsive-video object,
+ .responsive-video embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ #tituloRedes{
+  color: blueviolet;
+    text-align: right;
+    padding-right: 2%;
+   }
+
+ /* FIN NUEVO RESPONSIVE VIDEO */
+
+ .txt-right{
+  text-align: right;
+  padding-right: 2%;
+ }
+
+ #news{
+   padding-left: 3%;
+   padding-right: 3%; 
+   position:right;
+ }
+
+ .blockquote{
+  padding-right: 5px;
+ }
+
+ #teta-text{
+margin: 3%;
+ }
+
+
+ #acadp-img{
+   height:10% ;
+   width:10%
+ }
+
+
+
+#footer {
+  background-color:rgb(246, 188, 229);
+  color: white;
+  text-align:right;
+  font-size: small;
+  font-style: italic;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 1px;
+  width: 100%;
+ 
+}
+ 
+
+/*flotante*/
+.float{
+  visibility: hidden;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:10px;
+	right:40px;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+
+.socialmediaIcons{
+  background-color: transparent;
+}
+
+#redesIcons{
+  text-align: right;
+}
+
+.section{
+    padding-top: 2%;
+    padding-left: 2%;
+
+}
+
+.ajustador{
+  padding-left: 2%;
+  padding-top:2%
+}
+
+#ajustador{
+  padding-left: 2%;
+  padding-top:2%
+}
