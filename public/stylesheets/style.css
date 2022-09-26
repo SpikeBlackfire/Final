@@ -6,10 +6,15 @@
  html {
    scroll-behavior: smooth;
  }
-
+ body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
  #grad1 {
   /*height: 900px;*/
-  background-color: pink; /* For browsers that do not support gradients */
+  margin: 0 auto;
+  /*background-color: pink;  For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, rgb(246, 188, 229), white);
 }
 
@@ -63,19 +68,18 @@ font-family: Architects Daughter;
  /* NUEVO RESPONSIVE VIDEO */
  .responsive-video {
    position: relative;
-   padding-bottom: 56.25%;
-   padding-top: 60px;
-   overflow: hidden;
+   padding-bottom: 5%;
+   
  }
 
  .responsive-video iframe,
  .responsive-video object,
  .responsive-video embed {
-   position: absolute;
+   
    top: 0;
    left: 0;
-   width: 100%;
-   height: 100%;
+   width: 50%;
+   
  }
 
  #tituloRedes{
@@ -102,7 +106,8 @@ font-family: Architects Daughter;
  }
 
  #teta-text{
-margin: 3%;
+/*margin: 3%;*/
+padding-bottom: 2%; 
  }
 
 
@@ -114,8 +119,8 @@ margin: 3%;
 
 
 #footer {
-  background-color:rgb(246, 188, 229);
-  color: white;
+  /*background-color:rgb(246, 188, 229);*/
+  color:darkgray;
   text-align:right;
   font-size: small;
   font-style: italic;

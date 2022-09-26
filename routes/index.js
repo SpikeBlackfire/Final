@@ -51,8 +51,5 @@ var mensaje = req.body.mensaje;
   console.log('Message sent: %s', info.messageId);
   
 }); //FIN PETICION POST
- 
-
-
 
   module.exports = router;
