@@ -16,59 +16,34 @@
 
 
 <!--NAV INICIO-->
-<div id="navdiv">
-  <nav class="navbar fixed-top navbar-light bg-light">
-
-    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Flor Arqueros Puericultora</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#noticias">Noticias</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">Flor Arqueros Puericultora</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#noticias">Noticias</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+            <li>
+              <hr class="dropdown-divider">
             </li>
-
-            <!--       //Escondido para separar el menu
-
-                            <li class="nav-item"> //cambiar navlink a active?
-                                <a class="nav-link" href="contacto.html">Contacto</a> 
-                            </li> -->
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Menu
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
-
-                <!-- // tal vez se pueda usar un menu de una sola division 
-                                    <li><a class="dropdown-item" href="redes.html">Redes</a></li> -->
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#redes">Redes</a></li>
-              </ul>
-            </li>
+            <li><a class="dropdown-item" href="#redes">Redes</a></li>
           </ul>
-          <form class="d-flex" role="search">
-
-            <!-- SEARCH INICIO // Apagada para algun plan a futuro
-                        
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button> 
-            
-            SEARCH END -->
-          </form>
-        </div>
-      </div>
-    </nav>
-  </nav>
-</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!--NAV END-->
 
 <!--BODY  INICIO-->
@@ -81,31 +56,32 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 
-    <script src="/javascripts/script.js"></script>
+  <script src="/javascripts/script.js"></script>
 
 
 
-<!--Button ARRIBA-->
-<div class="float" id="show">
-  <div class="column" >
-    <div class="col">
-      <div class="col align-self-start">
-      </div>
-      <div class="col align-self-center">
-      </div>
-      <div class="col col-lg-1">
-        <!--AL HOME--> <a href="" class="btn btn-primary"> Arriba </a>
+  <!--Button ARRIBA-->
+  <div class="float" id="show">
+    <div class="column">
+      <div class="col">
+        <div class="col align-self-start">
+        </div>
+        <div class="col align-self-center">
+        </div>
+        <div class="col col-lg-1">
+          <!--AL HOME--> <a href="" class="btn btn-primary"> Arriba </a>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-<!--FIN Button ARRIBA-->
+  <!--FIN Button ARRIBA-->
 
 
 </body>
 
-<footer class="footer" id="footer"> Diseño by <a href="facebook.com/blackfireDesigns" target="_blank"> Blackfire Designs</a>  - Manuel Fernandez
-  
+<footer class="footer" id="footer"> Diseño by <a href="facebook.com/blackfireDesigns" target="_blank"> Blackfire
+    Designs</a> - Manuel Fernandez
+
 </footer>
 
 </html>

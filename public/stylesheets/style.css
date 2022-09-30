@@ -1,16 +1,19 @@
- @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+ 
+ 
 
  html {
    scroll-behavior: smooth;
  }
  body {
   margin:0;
-  padding:0;
   overflow-x:hidden;
+
   }
+
  #grad1 {
   /*height: 900px;*/
   margin: 0 auto;
@@ -26,9 +29,6 @@ font-family: Architects Daughter;
   font-family: Roboto Condensed ;
  }
 
- .fixed-top {
-   position: fixed
- }
 
  .carousel-inner>.item>img {
    width: 640px;
@@ -45,27 +45,6 @@ font-family: Architects Daughter;
    font-size: 32px;
  }
 
- /*   VIDEO VIEJO CSS  
-  .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    /* padding-top: 56.25%; 
-  }
-  .responsive-iframe {
-    position: fixed /*absolute? ;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100% /*70%? ;
-    height: 75% /*70% ? ;
-      }  
-      
-      FIN VIDEO VIEJO CSS*/
-
-
- /* NUEVO RESPONSIVE VIDEO */
  .responsive-video {
    position: relative;
    padding-bottom: 5%;
@@ -78,7 +57,7 @@ font-family: Architects Daughter;
    
    top: 0;
    left: 0;
-   width: 50%;
+   width: 95%;
    
  }
 
@@ -88,7 +67,7 @@ font-family: Architects Daughter;
     padding-right: 2%;
    }
 
- /* FIN NUEVO RESPONSIVE VIDEO */
+
 
  .txt-right{
   text-align: right;
@@ -106,7 +85,7 @@ font-family: Architects Daughter;
  }
 
  #teta-text{
-/*margin: 3%;*/
+
 padding-bottom: 2%; 
  }
 
@@ -116,23 +95,22 @@ padding-bottom: 2%;
    width:10%
  }
 
-
-
 #footer {
-  /*background-color:rgb(246, 188, 229);*/
+
   color:darkgray;
   text-align:right;
   font-size: small;
   font-style: italic;
-  padding-right: 5px;
+  padding-right: 5%;
   padding-bottom: 5px;
   padding-top: 1px;
   width: 100%;
+  margin-right: 5px;
  
 }
  
 
-/*flotante*/
+/* botón flotante*/
 .float{
   visibility: hidden;
 	position:fixed;
@@ -142,10 +120,14 @@ padding-bottom: 2%;
 	right:40px;
 }
 
-.my-float{
-	margin-top:22px;
-}
+@media (min-width:320px)  {
 
+  .float{
+
+    float: right;
+    margin-right: 5%;
+  }
+}
 
 .socialmediaIcons{
   background-color: transparent;
@@ -156,17 +138,26 @@ padding-bottom: 2%;
 }
 
 .section{
-    padding-top: 2%;
+    padding-top: 5%;
     padding-left: 2%;
 
 }
 
 .ajustador{
   padding-left: 2%;
-  padding-top:2%
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-right:2%
 }
 
 #ajustador{
   padding-left: 2%;
   padding-top:2%
 }
+
+.iframe-rwd  {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  }
