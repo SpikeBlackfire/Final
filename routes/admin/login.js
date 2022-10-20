@@ -2,9 +2,11 @@ var express = require('express');
 var router = express.Router();
 var usuariosModel = require('./../../models/usuariosModel');
 
+
+//Layout SIN boton de login
 router.get('/', function (req, res, next) {
     res.render('admin/login', {
-        layout: 'admin/layout'
+        layout: 'admin/layout off'
     });
 });
 
@@ -23,7 +25,7 @@ router.post('/', async (req, res, next) => {
             res.redirect('/admin/novedades');
         } else {
             res.render('admin/login', {
-                layout: 'admin/layout',
+                layout: 'admin/layout off',
                 error: true
             })
         } //CLOSING ELSE
@@ -32,11 +34,11 @@ router.post('/', async (req, res, next) => {
     }
 });
 
-
+//Layout SIN boton de login AFTER LOGOUT
 router.get('/logout', function (req, res, next) {
     req.session.destroy();
     res.render('admin/login', {
-        layout: 'admin/layout'
+        layout: 'admin/layout off'
     });
 });
 

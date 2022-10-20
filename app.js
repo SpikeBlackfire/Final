@@ -10,6 +10,7 @@ require('dotenv').config();
 
 //sessiones
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 
 
@@ -28,7 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 
-
+//session
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -40,6 +41,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }))
+
 
 secured= async(req,res,next)=>{
   try{
@@ -54,6 +56,15 @@ secured= async(req,res,next)=>{
   }
 };
 
+
+//fileUpload
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp'
+}))
+
+
+//routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
